@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d333;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    background-color: #43281c;
+    color: #fbf2c0;
+}
+.nav-bar img{
+    height: 30px;
+    margin-top: 18px;
+    margin-right: 5px;
+}
+.item{
+    border-bottom: 2px solid #DDB892;
+  display: grid;
+  padding: 10px ;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: 
+    "quantity title   price"
+    "quantity options price";
+
+  row-gap: 20px;
+
+}
+.page{
+    display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+  grid-template-areas:
+    "order payment"
+    "total total";
+  grid-template-columns: 1fr 1fr;
+}
+.left-bar-parent{
+    background-color: #eee1d5;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+  padding: 15px;
+  width: 100%;
+}
+.input-name{
+    position: absolute;
+    top: -7px;
+    left: 25px;
+    background-color: #eee1d5;
+    color: #885a2d;
+    font-size: 12px;
+}
+
+.input-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+.name-input{
+    width: 100%;
+    background-color: #ecc5;
+    border: 2px #885a2d solid;
+    border-radius: 30px;
+    padding: 10px;
+}
+#input-box{
+    width: 40%;
+}
+.payment-box{
+    margin-top: 10px;
+    background-color: #eee1d5;
+    padding: 25px;
+    border-radius: 10px;
+}
+.name-box{
+    background-color: #eee1d5;
+    padding: 15px;
+    border-radius: 10px;
+}
+.header{
+    font-size: 16px;
+    font-weight: normal;
+    color: #885a2d;
+    font-family: Arial,sans-serif;
+}
+.item-title{
+    font-weight: bold;
+}
+.item-price{
+    font-weight: bold;
+}
+.listed-items{
+    margin: 0;
+    padding: 0;
+}
+.item-option{
+    margin-top: 10px;
+}
+.item-option-list{
+    padding: 0;
+    margin: 0;
+    color: #B08968;
+    list-style: none;
+}
+.item-quantity{
+    grid-area: quantity;
+}
+.item:last-child{
+    border-bottom: none;
+}
+.table{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.total-list{
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+    
+}
+.totals-list td:last-child {
+    text-align: right;
+  }
+  .total-list td{
+    padding: 10px;
+  }
+  .total-price{
+    font-weight: bold;
+  }
+  .btn{
+    background-color: #deb993;
+  border: none;
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 100px;
+  font-size: 16px;
+  }
